@@ -13,14 +13,16 @@ const Overview = () => {
           alt="Binaya Tripathi - Co-Founder"
           width={300}
           height={300}
-          className="rounded-full shadow-xl object-cover"
+          className="rounded-full  object-cover"
         />
       </div>
 
       {/* Text Section */}
       <div className="flex-1 text-center md:text-left max-w-xl">
         <div className="mb-4">
-          <h4 className="text-xl font-semibold text-gray-800">Dipak Sharma</h4>
+          <h4 className="text-xl font-semibold text-gray-800">
+            Binaya Tripathi
+          </h4>
           <h5 className="text-md font-medium text-gray-600">
             Co-Founder & CTO
           </h5>

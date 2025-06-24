@@ -27,7 +27,7 @@ const Problem = () => {
           alt="Real Estate Problems"
           width={500}
           height={350}
-          className="rounded-lg shadow-xl object-contain"
+          className="rounded-lg object-contain"
         />
       </div>
     </section>

@@ -29,7 +29,7 @@ const Solution = () => {
             alt="Solution"
             width={500}
             height={350}
-            className="rounded-lg shadow-xl"
+            className="rounded-lg "
           />
         </div>
       </section>

@@ -27,7 +27,7 @@ const BlogPage = () => {
   ];
 
   return (
-    <main className="max-w-6xl my-14 mx-auto px-4 py-24">
+    <main className=" mt-14 mx-auto px-4 py-24 bg-white">
       <h1 className="text-4xl font-bold mb-12 text-center text-gray-800">
         Blog & Insights
       </h1>

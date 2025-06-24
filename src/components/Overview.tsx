@@ -4,13 +4,13 @@ const Overview = () => {
   return (
     <section
       id="overview"
-      className="w-full py-20 px-6 md:px-12 flex flex-col md:flex-row gap-12 items-center justify-between bg-gray-50"
+      className="w-full py-20 px-6 md:px-12 flex flex-col md:flex-row gap-8 items-center justify-between bg-gray-50"
     >
       {/* Image Section */}
       <div className="flex-1 flex justify-center">
         <Image
-          src="/co-founder.jpeg"
-          alt="Dipak Sharma - Co-Founder"
+          src="/binaya-tripathi.jpeg"
+          alt="Binaya Tripathi - Co-Founder"
           width={300}
           height={300}
           className="rounded-full shadow-xl object-cover"

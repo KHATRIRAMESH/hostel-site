@@ -10,7 +10,7 @@ const Overview = () => {
       <div className="flex-1 flex justify-center">
         <Image
           src="/binaya-tripathi.jpeg"
-          alt="Binaya Tripathi - Co-Founder"
+          alt="Binaya Tripathi -Founder"
           width={300}
           height={300}
           className="rounded-full  object-cover"
@@ -24,7 +24,7 @@ const Overview = () => {
             Binaya Tripathi
           </h4>
           <h5 className="text-md font-medium text-gray-600">
-            Co-Founder & CTO
+            Founder & CEO
           </h5>
         </div>
 

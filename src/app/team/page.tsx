@@ -4,7 +4,7 @@ export default function TeamPage() {
   const teamMembers = [
     {
       name: "Binaya Tripathi",
-      title: "Co-Founder/COO",
+      title: "Founder/CEO",
       image: "/binaya-tripathi.jpeg",
       description:
         "Over 22 years industry experience. Built up many successful property businesses throughout UK, Europe & USA.",

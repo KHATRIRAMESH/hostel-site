@@ -62,9 +62,7 @@ export default function TeamPage() {
                   {member.name}
                 </h3>
                 <p className="text-gray-600 font-medium">{member.title}</p>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {member.description}
-                </p>
+              
               </div>
             </div>
           ))}

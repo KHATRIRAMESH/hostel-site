@@ -4,31 +4,24 @@ export default function TeamPage() {
   const teamMembers = [
     {
       name: "Binaya Tripathi",
-      title: "Founder/CEO",
+      title: "Founder & CEO",
       image: "/binaya-tripathi.jpeg",
-      description:
-        "Over 22 years industry experience. Built up many successful property businesses throughout UK, Europe & USA.",
     },
+
     {
       name: "Dipak Sharma",
-      title: "Co-Founder/CTO",
+      title: "Blockchain Developer",
       image: "/dipak-sharma.jpeg",
-      description:
-        "Delivered big infrastructure projects for Coca-Cola & hundreds of web2 applications. Graduate of PBA, UCL Berkeley.",
     },
     {
       name: "Mahan Gurung",
       title: "Blockchain Developer",
       image: "/mahan-gurung.jpeg",
-      description:
-        "Specialized in developing blockchain solutions and leveraging decentralized technologies such as the InterPlanetary File System (IPFS). Additionally, I design and oversee comprehensive system architectures to ensure robust, scalable project implementations.",
     },
     {
       name: "Basanta Subedi",
       title: "Blockchain Developer",
       image: "/basanta-subedi.jpeg",
-      description:
-        "Blockchain developer with a strong focus on building secure and decentralized applications. I specialize in smart contract development on both Ethereum and Stacks blockchain, leveraging technologies such as Solidity, Clarity, Ethers.js, and Stacks.js to bring Web3 ideas to life.",
     },
   ];
 

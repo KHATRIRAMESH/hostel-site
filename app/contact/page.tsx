@@ -52,11 +52,6 @@ export default function Contact() {
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Map Placeholder */}
-                            <div className="h-64 bg-slate-200 rounded-xl relative overflow-hidden flex items-center justify-center">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4291.6967317666995!2d85.33097747607151!3d27.695202326025928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19007c9031b1%3A0xd1a55d5777c1edf8!2sGoma%20girls%20hostel!5e1!3m2!1sen!2snp!4v1768556327711!5m2!1sen!2snp" width="600" height="700" style={{ border: '0' }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
                         </div>
 
                         <div className="bg-white p-8 rounded-2xl shadow-sm border border-brand-100">

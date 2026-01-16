@@ -51,7 +51,7 @@ export function ContactForm() {
         </div>
       </div>
       <div>
-        <Button type="submit" className="w-full">
+        <Button type="submit" className="w-full text-black">
           {submitted ? "Message Sent!" : "Send Message"}
         </Button>
       </div>

@@ -44,15 +44,15 @@ export function Footer() {
                 <ul role="list" className="mt-6 space-y-4">
                   <li className="flex items-center gap-2 text-sm leading-6 text-slate-300">
                     <MapPin className="h-4 w-4 shrink-0 text-brand-400" />
-                    Kathmandu, Nepal
+                    <a href="https://www.google.com/maps/place/Goma+girls+hostel/@27.6952023,85.3309775,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb19007c9031b1:0xd1a55d5777c1edf8!8m2!3d27.6952023!4d85.3331662!16s%2Fm%2F01q1t6q">Radha Krishna Marg, Kathmandu</a>
                   </li>
                   <li className="flex items-center gap-2 text-sm leading-6 text-slate-300">
                     <Phone className="h-4 w-4 shrink-0 text-brand-400" />
-                    +977-9800000000
+                    <a href="tel:+9779820232070">+977-9820232070</a>
                   </li>
                   <li className="flex items-center gap-2 text-sm leading-6 text-slate-300">
                     <Mail className="h-4 w-4 shrink-0 text-brand-400" />
-                    info@gomahostel.com
+                    <a href="mailto:info@gomahostel.com">info@gomahostel.com</a>
                   </li>
                 </ul>
               </div>

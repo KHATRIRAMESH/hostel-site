@@ -81,7 +81,7 @@ export const roomTypes = [
         description: "Your own private space with a study table giving you full focus and privacy.",
         priceRange: "NPR 14,000 - 16,000",
         features: ["Single Bed", "Private Cupboard", "Study Table", "Bookshelf"],
-        image: "/images/single-room.jpg",
+        image: "/images/room/room2.jpeg",
     },
     {
         id: "twin",
@@ -89,7 +89,7 @@ export const roomTypes = [
         description: "Share with a friend! Spacious room with two beds and separate storage.",
         priceRange: "NPR 11,000 - 13,000",
         features: ["2 Beds", "Separate Wardrobes", "2 Study Tables", "Balcony Access"],
-        image: "/images/twin-room.jpg",
+        image: "/images/room/room1.jpg",
     },
     {
         id: "triple",
@@ -97,7 +97,7 @@ export const roomTypes = [
         description: "Economic and social. Large room comfortable for three residents.",
         priceRange: "NPR 9,000 - 10,500",
         features: ["3 Beds", "Individual Lockers", "Common Table", "Attached Bathroom"],
-        image: "/images/triple-room.jpg",
+        image: "/images/room/room2.jpeg",
     },
     {
         id: "four",
@@ -105,6 +105,6 @@ export const roomTypes = [
         description: "Most affordable option. Big room with good ventilation and company.",
         priceRange: "NPR 8,000 - 9,000",
         features: ["4 Beds", "Individual Lockers", "Spacious", "Budget Friendly"],
-        image: "/images/four-room.jpg",
+        image: "/images/room/room1.jpg",
     },
 ];

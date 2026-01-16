@@ -6,7 +6,7 @@ export default function Gallery() {
   // Generate placeholder images
   const images = Array.from({ length: 9 }).map((_, i) => ({
     id: i,
-    src: "/images/room1.jpg",
+    src: "/images/room/room1.jpg",
     alt: `Gallery Image ${i + 1}`
   }));
 
@@ -27,7 +27,7 @@ export default function Gallery() {
               <div key={img.id} className="relative overflow-hidden rounded-xl bg-slate-200 break-inside-avoid">
                 {/* Placeholder blocks of varying heights for masonry effect */}
                 <div style={{ height: 200 + (img.id % 3) * 100 }} className="flex items-center justify-center bg-brand-50 text-brand-300">
-                  <Image src="/images/room1.jpg" alt={img.alt} width={500} height={500} />
+                  <Image src="/images/room/room1.jpg" alt={img.alt} width={500} height={500} />
                 </div>
               </div>
             ))}

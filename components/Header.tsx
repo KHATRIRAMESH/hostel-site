@@ -48,7 +48,7 @@ export function Header() {
             <DialogContent className="sm:max-w-sm">
               <DialogHeader>
                 <DialogTitle className="text-left flex items-center gap-2">
-                  <Image src="/logo.jpeg" alt="logo" width={50} height={50} className="rounded-full" />
+                  <Image src="/icon/logo.jpeg" alt="logo" width={50} height={50} className="rounded-full" />
                   <span className="font-serif text-brand-700">Goma&apos;s Girl Hostel</span>
                 </DialogTitle>
               </DialogHeader>

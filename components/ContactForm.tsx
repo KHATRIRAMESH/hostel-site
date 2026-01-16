@@ -7,14 +7,14 @@ import { Textarea } from "@/components/ui/textarea"
 import { useState } from "react"
 
 export function ContactForm() {
-    const [submitted, setSubmitted] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
 
-    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-        event.preventDefault()
-        // Simulate form submission
-        setSubmitted(true)
-        setTimeout(() => setSubmitted(false), 3000)
-    }
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    // Simulate form submission
+    setSubmitted(true)
+    setTimeout(() => setSubmitted(false), 3000)
+  }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
@@ -40,7 +40,7 @@ export function ContactForm() {
         <div className="sm:col-span-2">
           <Label htmlFor="phone">Phone number</Label>
           <div className="mt-2">
-             <Input type="tel" name="phone" id="phone" autoComplete="tel" />
+            <Input type="tel" name="phone" id="phone" autoComplete="tel" />
           </div>
         </div>
         <div className="sm:col-span-2">
@@ -52,7 +52,7 @@ export function ContactForm() {
       </div>
       <div>
         <Button type="submit" className="w-full">
-            {submitted ? "Message Sent!" : "Send Message"}
+          {submitted ? "Message Sent!" : "Send Message"}
         </Button>
       </div>
     </form>

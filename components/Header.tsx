@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -24,6 +25,7 @@ export function Header() {
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
+            <Image src="/logo.svg" alt="logo" width={32} height={32} />
             <span className="text-xl font-bold tracking-tight text-brand-700 font-serif">Goma&apos;s Girl Hostel</span>
           </Link>
         </div>
@@ -49,7 +51,7 @@ export function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button asChild size="sm" className="rounded-full">
+          <Button asChild size="sm" className="rounded-full text-brand-700">
             <Link href="/booking">Book Now</Link>
           </Button>
         </div>
@@ -60,7 +62,7 @@ export function Header() {
         <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5 text-xl font-bold text-brand-700 font-serif">
-               Goma&apos;s Girl Hostel
+              Goma&apos;s Girl Hostel
             </Link>
             <button
               type="button"
@@ -86,7 +88,7 @@ export function Header() {
                 ))}
               </div>
               <div className="py-6">
-                 <Button asChild className="w-full rounded-full">
+                <Button asChild className="w-full rounded-full">
                   <Link href="/booking" onClick={() => setMobileMenuOpen(false)}>Book Your Stay</Link>
                 </Button>
               </div>

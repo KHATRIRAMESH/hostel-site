@@ -81,14 +81,14 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-slate-900 hover:text-brand-600 transition-colors"
+              className="text-sm font-semibold leading-6 text-slate-900 hover:text-brand-600 transition-colors hover:underline hover:underline-offset-4 hover:transition-all hover:duration-300 hover:ease-in-out"
             >
               {item.name}
             </Link>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Button asChild size="sm" className="rounded-full text-brand-700">
+          <Button asChild size="sm" className="rounded-full text-brand-700 hover:shadow-lg hover:shadow-brand-600/50 hover:transition-all hover:duration-300 hover:ease-in-out">
             <Link href="/booking">Book Now</Link>
           </Button>
         </div>

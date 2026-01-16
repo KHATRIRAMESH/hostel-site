@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 export default function About() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+
       <main className="flex-1 pt-16">
         <div className="bg-brand-50 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -42,7 +42,6 @@ export default function About() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

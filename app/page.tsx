@@ -11,7 +11,7 @@ import { ArrowRight } from "lucide-react";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+
       <main className="flex-1 pt-16">
         <Hero />
 
@@ -36,7 +36,7 @@ export default function Home() {
         </section>
 
         {/* Services Teaser */}
-        <section className="bg-brand-50 py-24 sm:py-32">
+        <section className="bg-brand-50 py-10 sm:py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl font-serif">Everything You Need</h2>
@@ -45,7 +45,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:max-w-none lg:grid-cols-3">
-              {services.slice(0, 3).map((service) => (
+              {services.slice(0, 6).map((service) => (
                 <ServiceCard key={service.title} {...service} />
               ))}
             </div>
@@ -58,7 +58,7 @@ export default function Home() {
         </section>
 
         {/* Testimonials */}
-        <section className="bg-brand-900 py-24 sm:py-32">
+        <section className="bg-brand-900 py-10 sm:py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl font-serif">What Our Residents Say</h2>
@@ -68,7 +68,7 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section className="bg-brand-50 overflow-hidden py-16">
+        <section className="bg-brand-50 overflow-hidden py-10">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2 lg:items-center text-center lg:text-left">
               <div className="text-black">
@@ -89,7 +89,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }

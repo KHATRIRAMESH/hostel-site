@@ -7,7 +7,7 @@ import { GoogleMapsEmbed } from "@next/third-parties/google";
 export default function Contact() {
     return (
         <div className="flex min-h-screen flex-col">
-            <Header />
+
             <main className="flex-1 pt-16">
                 <div className="bg-brand-900 py-16 sm:py-24 text-center">
                     <h1 className="text-4xl font-bold tracking-tight text-white font-serif">
@@ -86,7 +86,7 @@ export default function Contact() {
                     </div>
                 </div>
             </main>
-            <Footer />
+
         </div>
     );
 }

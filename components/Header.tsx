@@ -30,7 +30,7 @@ export function Header() {
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 ">
-            <Image src="/logo.jpeg" alt="logo" width={50} height={50} className="rounded-full" />
+            <Image src="/icon/logo.jpeg" alt="logo" width={50} height={50} className="rounded-full" />
             <span className="text-xl font-bold tracking-tight text-brand-700 font-serif">Goma&apos;s Girl Hostel</span>
           </Link>
         </div>

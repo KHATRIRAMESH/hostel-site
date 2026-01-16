@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Mail, MapPin, Phone, MessageCircleMore } from "lucide-react"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -15,13 +16,13 @@ export function Footer() {
               A safe, secure, and homely environment for students and working women in Kathmandu.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-slate-400 hover:text-white">
+              <a href="https://www.facebook.com/gomasgirlshostel" className="text-slate-400 hover:text-white">
                 <span className="sr-only">Facebook</span>
                 <Facebook className="h-6 w-6" aria-hidden="true" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white">
-                <span className="sr-only">Instagram</span>
-                <Instagram className="h-6 w-6" aria-hidden="true" />
+              <a href="https://www.tiktok.com/@gomasgirlshostel_11" className="text-slate-400 hover:text-white">
+                <span className="sr-only">Tiktok</span>
+                <Image src="/icon/tiktok.svg" alt="tiktok" width={24} height={24} className="h-6 w-6 invert" aria-hidden="true" />
               </a>
             </div>
           </div>

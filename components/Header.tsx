@@ -29,8 +29,8 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-[999] bg-white/80 backdrop-blur-md border-b border-brand-100">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
-            <Image src="/logo.svg" alt="logo" width={32} height={32} />
+          <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2 ">
+            <Image src="/logo.jpeg" alt="logo" width={50} height={50} className="rounded-full" />
             <span className="text-xl font-bold tracking-tight text-brand-700 font-serif">Goma&apos;s Girl Hostel</span>
           </Link>
         </div>
@@ -48,7 +48,7 @@ export function Header() {
             <DialogContent className="sm:max-w-sm">
               <DialogHeader>
                 <DialogTitle className="text-left flex items-center gap-2">
-                  <Image src="/logo.svg" alt="logo" width={24} height={24} />
+                  <Image src="/logo.jpeg" alt="logo" width={50} height={50} className="rounded-full" />
                   <span className="font-serif text-brand-700">Goma&apos;s Girl Hostel</span>
                 </DialogTitle>
               </DialogHeader>

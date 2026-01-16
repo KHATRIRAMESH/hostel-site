@@ -2,11 +2,16 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
-
+import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
 import Image from "next/image"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -21,7 +26,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md border-b border-brand-100">
+    <header className="fixed inset-x-0 top-0 z-[999] bg-white/80 backdrop-blur-md border-b border-brand-100">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
@@ -30,14 +35,46 @@ export function Header() {
           </Link>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Menu className="h-6 w-6" aria-hidden="true" />
-          </button>
+          <Dialog open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700 hover:bg-slate-100"
+              >
+                <span className="sr-only">Open main menu</span>
+                <Menu className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-sm">
+              <DialogHeader>
+                <DialogTitle className="text-left flex items-center gap-2">
+                  <Image src="/logo.svg" alt="logo" width={24} height={24} />
+                  <span className="font-serif text-brand-700">Goma&apos;s Girl Hostel</span>
+                </DialogTitle>
+              </DialogHeader>
+              <div className="mt-6 flow-root">
+                <div className="-my-6 divide-y divide-gray-500/10">
+                  <div className="space-y-2 py-6">
+                    {navigation.map((item) => (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-brand-50"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="py-6">
+                    <Button asChild className="w-full rounded-full">
+                      <Link href="/booking" className="w-full text-black" onClick={() => setMobileMenuOpen(false)}>Book Your Stay</Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
         <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => (
@@ -56,46 +93,6 @@ export function Header() {
           </Button>
         </div>
       </nav>
-      {/* Mobile menu */}
-      <div className={cn("lg:hidden", mobileMenuOpen ? "fixed inset-0 z-50" : "hidden")} role="dialog" aria-modal="true">
-        <div className="fixed inset-0 z-50" />
-        <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5 text-xl font-bold text-brand-700 font-serif">
-              Goma&apos;s Girl Hostel
-            </Link>
-            <button
-              type="button"
-              className="-m-2.5 rounded-md p-2.5 text-slate-700"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <span className="sr-only">Close menu</span>
-              <X className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-slate-900 hover:bg-brand-50"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-              <div className="py-6">
-                <Button asChild className="w-full rounded-full">
-                  <Link href="/booking" onClick={() => setMobileMenuOpen(false)}>Book Your Stay</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
   )
 }

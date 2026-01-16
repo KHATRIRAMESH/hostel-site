@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Instagram, Mail, MapPin, Phone, MessageCircleMore } from "lucide-react"
 
 export function Footer() {
   return (
@@ -48,16 +48,23 @@ export function Footer() {
                   </li>
                   <li className="flex items-center gap-2 text-sm leading-6 text-slate-300">
                     <Phone className="h-4 w-4 shrink-0 text-brand-400" />
-                    <a href="tel:+9779820232070">+977-9820232070</a>
+                    <a href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}>{process.env.NEXT_PUBLIC_PHONE} (Call)</a>
+                  </li>
+                  <li className="flex items-center gap-2 text-sm leading-6 text-slate-300">
+                    <MessageCircleMore className="h-4 w-4 shrink-0 text-brand-400" />
+                    <a href={`https://wa.me/${process.env.NEXT_PUBLIC_PHONE}`}>{process.env.NEXT_PUBLIC_PHONE} (WhatsApp)</a>
                   </li>
                   <li className="flex items-center gap-2 text-sm leading-6 text-slate-300">
                     <Mail className="h-4 w-4 shrink-0 text-brand-400" />
-                    <a href="mailto:info@gomahostel.com">info@gomahostel.com</a>
+                    <a href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>{process.env.NEXT_PUBLIC_EMAIL}</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4291.6967317666995!2d85.33097747607151!3d27.695202326025928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19007c9031b1%3A0xd1a55d5777c1edf8!2sGoma%20girls%20hostel!5e1!3m2!1sen!2snp!4v1768556327711!5m2!1sen!2snp" width="600" height="450" style={{ border: '0', borderRadius: '10px' }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <div className="mt-10 md:mt-0">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4291.6967317666995!2d85.33097747607151!3d27.695202326025928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19007c9031b1%3A0xd1a55d5777c1edf8!2sGoma%20girls%20hostel!5e1!3m2!1sen!2snp!4v1768556327711!5m2!1sen!2snp" className="w-full xl:w-[600px] h-[450px]" style={{ border: '0', borderRadius: '10px' }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
           </div>
         </div>
         <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
